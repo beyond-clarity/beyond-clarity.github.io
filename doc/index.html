@@ -1,0 +1,1028 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documentation</title>
+<meta content="Documentation" property="og:title">
+<meta content="Documentation" name="twitter:title">
+<meta content="Documentation" name="title">
+<meta content="Documentation" property="og:site_name">
+<meta content="Tutorial and Documentation how to use 11ty gets Tufte" name="description">
+<meta content="Tutorial and Documentation how to use 11ty gets Tufte" property="facebook:description">
+<meta content="Tutorial and Documentation how to use 11ty gets Tufte" property="og:description">
+<meta content="Tutorial and Documentation how to use 11ty gets Tufte" name="twitter:description">
+<meta property="twitter:card" content="summary_large_image">
+<meta content="/img/orange.svg" name="twitter:image">
+<meta content="/img/orange.svg" name="facebook:image">
+<meta content="/img/orange.svg" name="og:image">
+<link href="/img/orange.svg" rel="icon" type="image/x-icon">
+<meta content="" property="facebook:author">
+<meta content="@memming" property="twitter:author">
+<meta content="https://x.com/memming" name="twitter:site">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://tufte.000000076.xyz//doc/">
+<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Beyond Clarity Project">
+<meta name="language" content="en">
+<meta name="locale" content="en_US">
+<meta property="og:locale" content="en_US">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","description":"Smooth exchanges between the discrete and the continuous","headline":"Beyond Clarity Project - Smooth exchanges between the discrete and the continuous","name":"Beyond Clarity Project","url":"https://tufte.000000076.xyz//doc/"}</script>
+<link rel="apple-touch-icon" href="/img/orange.svg">
+<meta name="generator" content="Eleventy v3.0.0">
+<link rel="preload" href="/css/gill-sans-2.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/gill-sans-2.css"></noscript>
+<style>@charset "UTF-8";
+@font-face {
+  font-family: "et-book";
+  src: url("/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
+  src: url("/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "et-book";
+  src: url("/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
+  src: url("/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
+  font-display: swap;
+  font-weight: normal;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "et-book";
+  src: url("/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
+  src: url("/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
+  font-display: swap;
+  font-weight: bold;
+  font-style: normal
+}
+
+/* Customization */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.skip-link {
+    background: #000000;
+    height: 30px;
+    left: 50%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+
+}
+
+.skip-link:focus {
+    transform: translateY(0%);
+
+}
+
+
+/* Tufte CSS styles */
+body {
+    width: 87.5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8.5%;
+    background-color: #151515;
+    color: white;
+    font-size: 15px;
+    font-family: et-book, "Gill Sans Nova", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #151515;
+    color: white;
+    counter-reset: sidenote-counter;
+}
+
+
+h1 {
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 3.2rem;
+    line-height: 1;
+}
+
+h2 {
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 2.1rem;
+    margin-bottom: 1.4rem;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+h3 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    margin-bottom: 1.4rem;
+    line-height: 1;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 55%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+p.subtitle {
+    font-style: italic;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    display: block;
+    line-height: 1;
+}
+
+.numeral {
+}
+
+.danger {
+    color: red;
+}
+
+article {
+    padding: 5rem 0rem;
+}
+
+section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+p,
+dl,
+ol,
+ul {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+p {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding-right: 0;
+    vertical-align: baseline;
+}
+
+/* Chapter Epigraphs */
+div.epigraph {
+    margin: 5em 0;
+}
+
+div.epigraph > blockquote {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+div.epigraph > blockquote,
+div.epigraph > blockquote > p {
+    font-style: italic;
+}
+
+div.epigraph > blockquote > footer {
+    font-style: normal;
+}
+
+div.epigraph > blockquote > footer > cite {
+    font-style: italic;
+}
+/* end chapter epigraphs styles */
+
+blockquote {
+    font-size: 1.4rem;
+}
+
+blockquote p {
+    width: 55%;
+    margin-right: 40px;
+}
+
+blockquote footer {
+    width: 55%;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+section > p,
+section > footer,
+section > table {
+    width: 55%;
+}
+
+/* 50 + 5 == 55, to be the same width as paragraph */
+section > dl,
+section > ol,
+section > ul {
+    width: 50%;
+    -webkit-padding-start: 5%;
+}
+
+dt:not(:first-child),
+li:not(:first-child) {
+    margin-top: 0.25rem;
+}
+
+figure {
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    max-width: 55%;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin: 0 0 3em 0;
+}
+
+figcaption {
+    float: right;
+    clear: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    vertical-align: baseline;
+    position: relative;
+    max-width: 40%;
+}
+
+figure.fullwidth figcaption {
+    margin-right: 24%;
+}
+
+a:link,
+a:visited {
+    color: inherit;
+    text-underline-offset: 0.1em;
+    text-decoration-thickness: 0.05em;
+}
+
+/* Sidenotes, margin notes, figures, captions */
+img {
+    max-width: 100%;
+}
+
+.sidenote,
+.marginnote {
+    float: right;
+    clear: right;
+    margin-right: -60%;
+    width: 50%;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    vertical-align: baseline;
+    position: relative;
+}
+
+.sidenote-number {
+    counter-increment: sidenote-counter;
+}
+
+.sidenote-number:after,
+.sidenote:before {
+    position: relative;
+    vertical-align: baseline;
+}
+
+.sidenote-number:after {
+    content: counter(sidenote-counter);
+    font-size: 1rem;
+    top: -0.5rem;
+    left: 0.1rem;
+}
+
+.sidenote:before {
+    content: counter(sidenote-counter) " ";
+    font-size: 1rem;
+    top: -0.5rem;
+}
+
+blockquote .sidenote,
+blockquote .marginnote {
+    margin-right: -82%;
+    min-width: 59%;
+    text-align: left;
+}
+.fullwidth
+div.fullwidth,
+table.fullwidth {
+    width: 100%;
+}
+
+div.table-wrapper {
+    overflow-x: auto;
+    font-family: "Gill Sans", "Gill Sans MT", "Gill Sans Nova", "Trebuchet MS", sans-serif;
+}
+
+.sans {
+    font-family: "Gill Sans", "Gill Sans MT", "Gill Sans Nova", Calibri, sans-serif;
+    letter-spacing: .03em;
+}
+
+code, pre > code {
+    font-family: Courier, Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 1.0rem;
+    line-height: 1.42;
+    -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+}
+
+.sans > code {
+    font-size: 1.2rem;
+}
+
+h1 > code,
+h2 > code,
+h3 > code {
+    font-size: 0.80em;
+}
+
+.marginnote > code,
+.sidenote > code {
+    font-size: 1rem;
+}
+
+pre > code {
+    font-size: 0.9rem;
+    width: 52.5%;
+    margin-left: 2.5%;
+    overflow-x: auto;
+    display: block;
+}
+
+pre.fullwidth > code {
+    width: 90%;
+}
+
+.fullwidth {
+    max-width: 90%;
+    clear:both;
+}
+
+span.newthought {
+    font-variant: small-caps;
+    font-size: 1.2em;
+}
+
+input.margin-toggle {
+    display: none;
+}
+
+label.sidenote-number {
+    display: inline-block;
+    max-height: 2rem; /* should be less than or equal to paragraph line-height */
+}
+
+label.margin-toggle:not(.sidenote-number) {
+    display: none;
+}
+
+.iframe-wrapper {
+    position: relative;
+    padding-bottom: 480px; /* 16:9 */
+    padding-top: 10px;
+    height: 0;
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 460px;
+}
+
+@media (max-width: 760px) {
+    body {
+        width: 84%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    hr,
+    section > p,
+    section > footer,
+    section > table {
+        width: 100%;
+    }
+
+    pre > code {
+        width: 97%;
+    }
+
+    section > dl,
+    section > ol,
+    section > ul {
+        width: 90%;
+    }
+
+    figure {
+        max-width: 90%;
+    }
+
+    figcaption,
+    figure.fullwidth figcaption {
+        margin-right: 0%;
+        max-width: none;
+    }
+
+    blockquote {
+        margin-left: 1.5em;
+        margin-right: 0em;
+    }
+
+    blockquote p,
+    blockquote footer {
+        width: 100%;
+    }
+
+    label.margin-toggle:not(.sidenote-number) {
+        display: inline;
+    }
+
+    .sidenote,
+    .marginnote {
+        display: none;
+    }
+
+    .margin-toggle:checked + .sidenote,
+    .margin-toggle:checked + .marginnote {
+        display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 95%;
+        margin: 1rem 2.5%;
+        vertical-align: baseline;
+        position: relative;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    div.table-wrapper,
+    table {
+        width: 85%;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+button,.btn {border:none;}
+.black {
+background-color: #151515;
+color: white;
+}
+
+  .hamburger {
+    cursor: pointer;
+    list-style: none;
+    float: right;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .bar1, .bar2,.bar3 {
+    width: 16px;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 5px;
+  }
+
+  .dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: #BE234D;
+  }
+
+  .dropdown {
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    background-color: black;
+    min-width: 160px;
+    overflow: auto;
+    opacity: 0.8;
+    border-radius: 16px;
+    color:white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown a:hover {
+    background-color: #BE234D;
+  }
+
+  .show {
+    display: block;
+  }
+.rounder {border-radius: 16px;}
+.navi-btn {background-color:#E72257; border-radius:50px;}
+.navis-btn {
+border-radius:50px;
+background-color: #E72257;
+padding: auto;
+text-align: center;
+justify-content: center;
+align-items: center;
+}
+.buttonis-nav {
+background-color: #E72257;
+color: #151515;
+border-radius: 50px;
+padding:5px;
+margin-bottom: 15px;
+}
+button,btn,.buttonis {
+background-color: #E72257;
+color: #151515;
+border-radius: 5px;
+padding:5px;
+}
+.buttonis-nav:hover, .buttonis:hover ,.navi-btn:hover,.navis-btn:hover {background-color:#BE234D;color: white;}
+.no-deco {text-decoration: none;}
+.py-5 {padding-left: 15px; padding-right:15px;}
+.me-5 {margin-left:15px;}
+.pt-5 {padding-top:12px;}
+.pt-3 {padding-top:5px;}
+.pt-30 {margin-top:50px;}
+.p-10 {padding:10px;}
+.taptoc {padding:8px; font-size:16px; margin:auto;}
+.red {color:red;}
+.text-center {text-align:center;}
+.text-small {font-size:13px;}
+.mt-5 {margin-top: 35px;}
+.text-pinky {color: #E72257;}
+.taptoc ul,ul.taptoc {font-size:16px;}
+li.pagefind-ui__result , p.pagefind-ui__result-title {color:white;}
+
+@media only screen and (min-width: 400px) and (max-width: 600px){
+.navbar {
+margin-left:-47px;
+margin-top:12px;
+position: fixed;
+background: rgba(21, 21, 21, 0.6);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(21, 21, 21, 0.3);
+}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+.navbar {
+margin-left:-62px;
+margin-top:12px;
+position: fixed;
+background: rgba(21, 21, 21, 0.6);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(21, 21, 21, 0.3);
+}
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+.navbar {
+margin-left:-122px;
+margin-top:12px;
+position: fixed;
+background: rgba(21, 21, 21, 0.6);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(21, 21, 21, 0.3);
+}
+}
+
+@media only screen and (min-width: 1400px){
+.navbar {
+margin-left:-202px;
+margin-top:12px;
+position: fixed;
+background: rgba(21, 21, 21, 0.6);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(21, 21, 21, 0.3);
+}
+}</style>
+
+</head>
+<body>
+<a href="#maincontent" class="skip-link">Skip to main content</a>
+<main class="fullwidth" id="maincontent">
+<navbar class="navbar pt-5">
+<div class="dropdown">
+<button type="button" tabindex="0" class="hamburger navi-btn" aria-label="Menu" onclick="myMenu()">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</button>
+<div id="myMenu" class="dropdown-content">
+<a href="/">Home</a><a href="/meetings/bc2025">BC2025</a><a href="/search/">Search</a>
+</div>
+</div>
+
+
+</navbar>
+
+<header class="pt-3">
+<h1 id="documentation"><a class="no-deco text-pinky" href="/doc/">Documentation</a></h1>
+<h2 class="sub-title" id="tutorial-and-documentation-how-to-use-11ty-gets-tufte">Tutorial and Documentation how to use 11ty gets Tufte</h2>
+</header>
+
+<heading-anchors>
+<section><div class="taptoc"><div class="toc">
+        <ul><li><a href="#installation">Installation </a></li><li><a href="#run-11ty-gets-tufte">Run 11ty Gets Tufte </a></li><li><a href="#configuration">Configuration </a></li><li><a href="#home-page">Home Page </a></li><li><a href="#static-page">Static Page </a></li><li><a href="#blog-dynamic-page">Blog Dynamic Page </a></li><li><a href="#section">Section </a></li><li><a href="#shortcode">Shortcode </a><ul><li><a href="#epigraph">Epigraph </a></li><li><a href="#epigraph-with-url-link">Epigraph with URL Link </a></li><li><a href="#blockquote">Blockquote </a></li><li><a href="#blockquote-with-url-link">Blockquote with URL Link </a></li><li><a href="#notes">Notes </a></li><li><a href="#side-notes">Side Notes </a></li><li><a href="#side-notes-internal-link">Side Notes Internal Link </a></li><li><a href="#side-notes-external-link">Side Notes External Link </a></li><li><a href="#notes-with-image">Notes with Image </a></li><li><a href="#standard-image">Standard Image </a></li><li><a href="#full-image">Full Image </a></li><li><a href="#video">Video </a></li></ul></li><li><a href="#build-for-production">Build for Production </a></li><li><a href="#need-help">Need Help ?? </a></li></ul>
+      </div></div><hr>
+<h2 id="installation" tabindex="-1">Installation <a class="header-anchor" href="#installation"></a></h2>
+<hr>
+<p>Need to download Node Js , <a href="https://nodejs.org/en/download">Download Node Here</a></p>
+<p>Download Source Code Project - <a href="https://github.com/adamdjbrett/11ty-gets-tufte/archive/refs/heads/main.zip">Download 11ty gets Tufte</a></p>
+<p>or Clone / Fork this Projects <code>git clone https://github.com/adamdjbrett/11ty-gets-tufte.git</code></p>
+<hr>
+<h2 id="run-11ty-gets-tufte" tabindex="-1">Run 11ty Gets Tufte <a class="header-anchor" href="#run-11ty-gets-tufte"></a></h2>
+<hr>
+<p>Open your download folder and extract in to your project folder, open terminal and run this command <code>npm install</code></p>
+<p>Next you can run this project on your local devices , run this command <code>npm start</code></p>
+<p>Now you can open <code>http://localhost:8080</code> on your web browser.</p>
+<hr>
+<h2 id="configuration" tabindex="-1">Configuration <a class="header-anchor" href="#configuration"></a></h2>
+<hr>
+<p>For the initial setup, go to <code>_data/metadata.js</code></p>
+<p>Then set it according to your needs, such as title, description, and others.</p>
+<p>Next, after making the settings, you are now ready to update your site.</p>
+<hr>
+<h2 id="home-page" tabindex="-1">Home Page <a class="header-anchor" href="#home-page"></a></h2>
+<hr>
+<p>To update the main page, go to <code>content/index.md</code> and change it to suit your needs.</p>
+<hr>
+<h2 id="static-page" tabindex="-1">Static Page <a class="header-anchor" href="#static-page"></a></h2>
+<hr>
+<p>To create a static page, you can access <code>content/page</code> and create a new markdown file there, for example <code>privacy.md</code> then create a frontmatter with the concept as below.</p>
+<pre><code>---
+title: This is my title
+description: My description in here...
+---
+Write your content article.......
+</code></pre>
+<hr>
+<h2 id="blog-dynamic-page" tabindex="-1">Blog Dynamic Page <a class="header-anchor" href="#blog-dynamic-page"></a></h2>
+<hr>
+<p>To create a dynamic page, for example a blog article, access <code>content/blog</code> and create a new markdown file there, for example <code>this-is-article.md</code> then create a frontmatter with the following concept:</p>
+<pre><code>---
+title: This is my title
+description: My description in here...
+date: 2025-01-09
+tags: 
+ - hello
+ - world
+---
+Write your content article.......
+</code></pre>
+<hr>
+<h2 id="section" tabindex="-1">Section <a class="header-anchor" href="#section"></a></h2>
+<hr>
+<p>Sections are used to provide wider spacing between articles on one markdown file, you can add them by adding <code>&lt;section&gt;</code>. to each area of ​​the article you want.</p>
+<p>Example:</p>
+<pre><code>&lt;section&gt;
+Write your article in here....
+&lt;/section&gt;
+
+&lt;section&gt;
+Write your others article in here....
+&lt;/section&gt;
+
+</code></pre>
+<hr>
+<h2 id="shortcode" tabindex="-1">Shortcode <a class="header-anchor" href="#shortcode"></a></h2>
+<hr>
+<p>This project is also equipped with shortcodes for ease of work. Learn the types of shortcodes that you can use to support your project.</p>
+<hr>
+<h3 id="epigraph" tabindex="-1">Epigraph <a class="header-anchor" href="#epigraph"></a></h3>
+<hr>
+<div class="epigraph"><blockquote><p>The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts.</p><footer>George Orwell, 'Politics and the English Language'</footer></blockquote></div>
+<p>To create epigraph, you need to use a shortcode ,to make you can simply paste into your markdown article.</p>
+<p>Implementation example for epigraph:</p>
+<pre><code>
+{% epigraph &quot;Hello this is content area&quot; , &quot;And this is footer area&quot; %}
+
+</code></pre>
+<p>Information:</p>
+<ul>
+<li><code>Hello this is content area</code> Write your content on this area.</li>
+<li><code>And this is footer area</code> this footnote area.</li>
+</ul>
+<p>HTML Code look like this</p>
+<pre><code>&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt;The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts.&lt;/p&gt;&lt;footer&gt;George Orwell, 'Politics and the English Language'&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
+</code></pre>
+<p>You can see the demo on <code>content/blog/epigraph.md</code> or <a href="/blog/epigraph">on this page</a></p>
+<hr>
+<h3 id="epigraph-with-url-link" tabindex="-1">Epigraph with URL Link <a class="header-anchor" href="#epigraph-with-url-link"></a></h3>
+<hr>
+<div class="epigraph"><blockquote><p>The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts.</p><footer>George Orwell, 'Politics and the English Language' <a href="https://adamdjbrett.com">Click Me</a></footer></blockquote></div>
+<p>To create epigraph, you need to use a shortcode ,to make you can simply paste into your markdown article.</p>
+<p>Implementation example for epigraph:</p>
+<pre><code>
+{% epigraphlink &quot;Hello this is content area&quot; , &quot;And this is footer area&quot; , &quot;Text for URL&quot; , &quot;http://example.com&quot;%}
+
+</code></pre>
+<p>Information:</p>
+<ul>
+<li><code>Hello this is content area</code> Write your content on this area.</li>
+<li><code>And this is footer area</code> this footnote area.</li>
+<li><code>Text for URL</code> this text URL area.</li>
+<li><code>http://example.com</code> insert domain url.</li>
+</ul>
+<p>HTML Code look like this</p>
+<pre><code>&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt;The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts.&lt;/p&gt;&lt;footer&gt;George Orwell, 'Politics and the English Language' &lt;a href=&quot;https://adamdjbrett.com&quot;&gt;Click Me&lt;/a&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
+</code></pre>
+<p>You can see the demo on <code>content/blog/epigraph-link.md</code> or <a href="/blog/epigraph-link">on this page</a></p>
+<hr>
+<h3 id="blockquote" tabindex="-1">Blockquote <a class="header-anchor" href="#blockquote"></a></h3>
+<hr>
+<blockquote><p>The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts.</p><footer>George Orwell, 'Politics and the English Language'</footer></blockquote>
+<p>To create blockquote, you need to use a shortcode ,to make you can simply paste into your markdown article.</p>
+<p>Implementation example for blockquote:</p>
+<pre><code>
+{% blockquote &quot;Hello this is content area&quot; , &quot;And this is footer area&quot; %}
+
+</code></pre>
+<p>Information:</p>
+<ul>
+<li><code>Hello this is content area</code> Write your content on this area.</li>
+<li><code>And this is footer area</code> this footer area.</li>
+</ul>
+<p>HTML Code look like this</p>
+<pre><code>&lt;blockquote&gt;&lt;p&gt;The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts.&lt;/p&gt;&lt;footer&gt;George Orwell, 'Politics and the English Language'&lt;/footer&gt;&lt;/blockquote&gt;
+</code></pre>
+<p>You can see the demo on <code>content/blog/blockquote.md</code> or <a href="/blog/blockquote">on this page</a></p>
+<hr>
+<h3 id="blockquote-with-url-link" tabindex="-1">Blockquote with URL Link <a class="header-anchor" href="#blockquote-with-url-link"></a></h3>
+<hr>
+<blockquote><p>The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts.</p><footer>George Orwell, 'Politics and the English Language' <a href="https://adamdjbrett.com">Click Me</a></footer></blockquote>
+<p>To create blockquote with URL Link, you need to use a shortcode ,to make you can simply paste into your markdown article.</p>
+<p>Implementation example for blockquote with link:</p>
+<pre><code>
+{% blockquotelink &quot;Hello this is content area&quot; , &quot;And this is footer area&quot; , &quot;Text url link info&quot; , &quot;https://example.com&quot; %}
+
+</code></pre>
+<p>Information:</p>
+<ul>
+<li><code>Hello this is content area</code> Write your content on this area.</li>
+<li><code>And this is footer area</code> this footer area.</li>
+<li><code>Text url link info</code> this text url link information area.</li>
+<li><code>And this is footer area</code> url link in here.</li>
+</ul>
+<p>HTML Code look like this</p>
+<pre><code>&lt;blockquote&gt;&lt;p&gt;The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts.&lt;/p&gt;&lt;footer&gt;George Orwell, 'Politics and the English Language' &lt;a href=&quot;https://adamdjbrett.com&quot;&gt;Click Me&lt;/a&gt;&lt;/footer&gt;&lt;/blockquote&gt;
+</code></pre>
+<p>You can see the demo on <code>content/blog/blockquote-link.md</code> or <a href="/blog/blockquote-link">on this page</a></p>
+<hr>
+<h3 id="notes" tabindex="-1">Notes <a class="header-anchor" href="#notes"></a></h3>
+<hr>
+<p><label for="1s" class="margin-toggle">⊕</label><input type="checkbox" id="1s" class="margin-toggle"><span class="marginnote">This is a example for notes features.</span></p>
+<p>To create notes, you need to use a shortcode ,to make you can simply paste into your markdown article.</p>
+<p>Implementation example for notes:</p>
+<pre><code>
+{% notes &quot;1s&quot;, &quot;This is a margin note. Notice there isn’t a number preceding the note.&quot; %}
+
+</code></pre>
+<p>PS: Do not use the same ID’s in one article</p>
+<p>Information:</p>
+<ul>
+<li><code>1s</code> is your id you can fill in the id there.</li>
+<li><code>This is a margin note....</code> this is the content for the notes area.</li>
+</ul>
+<p>HTML Code</p>
+<pre><code>&lt;label for=&quot;1s&quot; class=&quot;margin-toggle&quot;&gt;&amp;#8853;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;1s&quot; class=&quot;margin-toggle&quot;/&gt;&lt;span class=&quot;marginnote&quot;&gt;This is a example for notes features.&lt;/span&gt;
+</code></pre>
+<p>You can see the demo on <code>content/blog/notes-example.md</code> or <a href="/blog/notes-example">on this page</a></p>
+<hr>
+<h3 id="side-notes" tabindex="-1">Side Notes <a class="header-anchor" href="#side-notes"></a></h3>
+<hr>
+<p><span class="newthought">Title Side Notes<label for="sn-1b" class="margin-toggle sidenote-number"></label></span><input type="checkbox" id="sn-1b" class="margin-toggle"><span class="sidenote"><a href="#sn-1b" class="no-deco"><em>Side Notes Information</em></a></span>, This is a example content article for your side notes features.</p>
+<p>To create sidenotes, you need to use a shortcode that you can simply paste into your markdown article.</p>
+<p>Implementation example for sidenotes:</p>
+<pre><code>sidenote &quot;1b&quot;,&quot;Title&quot; ,&quot;Side Notes Info&quot;, &quot;Content in here..&quot; 
+</code></pre>
+<p>Information:</p>
+<ul>
+<li><code>1b</code> is your id you can fill in the id there.</li>
+<li><code>Title</code> this is the title for your side notes.</li>
+<li><code>Side Notes Info</code> this is the title for your side notes info on the right side.</li>
+<li><code>Content in here..</code> this is the content of your sidenotes article.</li>
+</ul>
+<p>PS: Do not use the same ID’s in one article</p>
+<p>HTML Code</p>
+<pre><code>&lt;span class=&quot;newthought&quot;&gt;Title Side Notes&lt;label for=&quot;sn-1b&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;/span&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-1b&quot; class=&quot;margin-toggle&quot;/&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;a href=&quot;#sn-1b&quot; class=&quot;no-deco&quot;&gt;&lt;em&gt;Side Notes Information&lt;/em&gt;&lt;/a&gt;&lt;/span&gt;, This is a example content article for your side notes features.
+</code></pre>
+<p>You can see the demo on <code>content/blog/side-notes-example.md</code> or <a href="/blog/side-notes-example">on this page</a></p>
+<hr>
+<h3 id="side-notes-internal-link" tabindex="-1">Side Notes Internal Link <a class="header-anchor" href="#side-notes-internal-link"></a></h3>
+<hr>
+<p><span class="newthought" id="sn-1ab">Title Side Notes Internal Link<label for="sn-1ab" class="margin-toggle sidenote-number"></label></span><input type="checkbox" class="margin-toggle"><span class="sidenote"><a href="#sn-1ab" class="no-deco"><em>Side Notes Internal Link Information</em></a></span>, This is a example content article for your side notes internal link features.</p>
+<p>To create sidenotes internal link with id link same like table of content, you need to use a shortcode that you can simply paste into your markdown article.</p>
+<p>Implementation example for sidenotes with internal link:</p>
+<pre><code>
+{% sidenoteinternal &quot;1bas&quot;,&quot;Title&quot; ,&quot;Side Notes Info&quot;, &quot;Content in here..&quot; %}
+
+</code></pre>
+<p>Information:</p>
+<ul>
+<li><code>1b</code> is your id you can fill in the id there.</li>
+<li><code>Title</code> this is the title for your side notes.</li>
+<li><code>Side Notes Info</code> this is the title for your side notes info on the right side.</li>
+<li><code>Content in here..</code> this is the content of your sidenotes article.</li>
+</ul>
+<p>PS: Do not use the same ID’s in one article</p>
+<p>HTML Code</p>
+<pre><code>&lt;span class=&quot;newthought&quot; id=&quot;sn-1ab&quot; &gt;Title Side Notes&lt;label for=&quot;sn-1ab&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;/span&gt;&lt;input type=&quot;checkbox&quot; class=&quot;margin-toggle&quot;/&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;a href=&quot;#sn-1ab&quot; class=&quot;no-deco&quot;&gt;&lt;em&gt;Side Notes Information&lt;/em&gt;&lt;/a&gt;&lt;/span&gt;, This is a example content article for your side notes features.
+</code></pre>
+<p>You can see the demo on <code>content/blog/side-notes-internal.md</code> or <a href="/blog/side-notes-internal">on this page</a></p>
+<hr>
+<h3 id="side-notes-external-link" tabindex="-1">Side Notes External Link <a class="header-anchor" href="#side-notes-external-link"></a></h3>
+<hr>
+<p><span class="newthought">Title Side Notes External Link<label for="sn-1db" class="margin-toggle sidenote-number"></label></span><input type="checkbox" id="sn-1db" class="margin-toggle"><span class="sidenote"><em>Side Notes External Link Information</em> <a href="https://youtube.com">Click me to external link</a></span>, This is a example content article for your side notes External link features.</p>
+<p>To create sidenotes external link , you need to use a shortcode that you can simply paste into your markdown article.</p>
+<p>Implementation example for sidenotes with external link:</p>
+<pre><code>
+{% sidenoteexternal &quot;1dcs&quot;,&quot;Title&quot; ,&quot;Side Notes Info&quot;, &quot;Content in here..&quot; , &quot;Text for url&quot; , &quot;https://www.example.com&quot; %}
+
+</code></pre>
+<p>Information:</p>
+<ul>
+<li><code>1b</code> is your id you can fill in the id there.</li>
+<li><code>Title</code> this is the title for your side notes.</li>
+<li><code>Side Notes Info</code> this is the title for your side notes info on the right side.</li>
+<li><code>Content in here..</code> this is the content of your sidenotes article.</li>
+<li><code>Text for url</code> Text for url link example click me</li>
+<li><code>https://www.example.com</code> your url link</li>
+</ul>
+<p>PS: Do not use the same ID’s in one article</p>
+<p>HTML Code</p>
+<pre><code>&lt;span class=&quot;newthought&quot;&gt;Title Side Notes External Link&lt;label for=&quot;sn-1db&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;/span&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-1db&quot; class=&quot;margin-toggle&quot;/&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;em&gt;Side Notes External Link Information&lt;/em&gt; &lt;a href=&quot;https://youtube.com&quot;&gt;Click me to external link&lt;/a&gt;&lt;/span&gt;, This is a example content article for your side notes External link features. 
+</code></pre>
+<p>You can see the demo on <code>content/blog/side-notes-external.md</code> or <a href="/blog/side-notes-external">on this page</a></p>
+<hr>
+<h3 id="notes-with-image" tabindex="-1">Notes with Image <a class="header-anchor" href="#notes-with-image"></a></h3>
+<hr>
+<p><label for="2s" class="margin-toggle">⊕</label><input type="checkbox" id="2s" class="margin-toggle"><span class="marginnote"><img src="/img/090-Subatomic Particles.png" alt="alt of image">This is example of Sub atomic particles via image quilt via <a href="http://imagequilts.com/">http://imagequilts.com/</a></span></p>
+<p>To create notes with images, you can use the shortcode as below, and paste it into your markdown article.</p>
+<pre><code>
+{% notesimage &quot;2s&quot;, &quot;/img/myimage.png&quot; , &quot;alt of image&quot; , &quot;content in here...&quot; %}
+
+</code></pre>
+<p>Information:</p>
+<ul>
+<li><code>2s</code> is the id, you can fill in the id there.</li>
+<li><code>/img/myimage.png</code> is the image file you want to use in the image notes.</li>
+<li><code>alt image</code> this is the alt image for your SEO needs.</li>
+<li><code>content in here...</code> enter content in this area.</li>
+</ul>
+<p>PS: Do not use the same ID’s in one article</p>
+<p>HTML Code</p>
+<pre><code>&lt;label for=&quot;2s&quot; class=&quot;margin-toggle&quot;&gt;&amp;#8853;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;2s&quot; class=&quot;margin-toggle&quot;/&gt;&lt;span class=&quot;marginnote&quot;&gt;&lt;img src=&quot;/img/myimage.jpg&quot; alt=&quot;alt of image&quot;/&gt;This is example notes with images 
+</code></pre>
+<p>You can see the demo on <code>content/blog/notes-image.md</code> or <a href="/blog/notes-image">on this page</a></p>
+<hr>
+<h3 id="standard-image" tabindex="-1">Standard Image <a class="header-anchor" href="#standard-image"></a></h3>
+<hr>
+<p><img src="/img/vantongerloo-2.png" alt="George Vantongerloo via image quilt"></p>
+<p><em>George Vantongerloo via image quilt <a href="http://imagequilts.com/">http://imagequilts.com/</a></em></p>
+<p>To use standard images, you can insert the normal image format into the article markdown. An example is as follows:</p>
+<p><code>![alt image](/img/myimage.png)</code></p>
+<p>You can see the demo on <code>content/blog/image-and-fullimage.md</code> or <a href="/blog/image-and-fullimage">on this page</a></p>
+<hr>
+<h3 id="full-image" tabindex="-1">Full Image <a class="header-anchor" href="#full-image"></a></h3>
+<hr>
+<figure class="fullwidth"><img src="/img/vantongerloo-2.png" width="100%" alt="full image"></figure>
+<p>If you want to use a full image, you can use a shortcode with the following format:</p>
+<pre><code>
+{% fullimage &quot;/img/myimage.png&quot;, &quot;alt image&quot; %}
+
+</code></pre>
+<p>Information:</p>
+<ul>
+<li><code>img/myimage.png</code> is your image file</li>
+<li><code>alt image</code> is the alt caption for your image.</li>
+</ul>
+<p>HTML Code</p>
+<pre><code>&lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;/img/myimage.jpg&quot; width=&quot;100%&quot; alt=&quot;full image&quot;/&gt;&lt;/figure&gt;
+</code></pre>
+<p>You can see the demo on <code>content/blog/notes-image.md</code> or <a href="/blog/image-and-fullimage">on this page</a></p>
+<hr>
+<h3 id="video" tabindex="-1">Video <a class="header-anchor" href="#video"></a></h3>
+<hr>
+<p>If you need to embed a video then you can use the following shortcode.</p>
+<pre><code>
+{% videos &quot;https://www.youtube.com/embed/hJGaMGmuZEc&quot; , &quot;title of your video&quot; %}
+
+</code></pre>
+<p>Information:</p>
+<ul>
+<li><code>https://example.com</code> enter your video URL in this area.</li>
+<li><code>title of your video</code> this is for your video title.</li>
+</ul>
+<p>HTML Code</p>
+<pre><code>&lt;figure class=&quot;iframe-wrapper&quot;&gt;&lt;iframe width=&quot;100%&quot; height=&quot;auto&quot; src=&quot;https://www.youtube.com/embed/Q3t5lzvpBdE&quot; title=&quot;title of your video&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;figure&gt;
+</code></pre>
+<p>You can see the demo on <code>content/blog/video.md</code> or <a href="/blog/video">on this page</a></p>
+<hr>
+<h2 id="build-for-production" tabindex="-1">Build for Production <a class="header-anchor" href="#build-for-production"></a></h2>
+<hr>
+<p>If you want to deploy your site you can run build production command in to your host, run <code>npm run build</code></p>
+<ul>
+<li>For PHP host , you can upload your build production <code>_site</code> folder in to your domain.</li>
+<li>For modern static host you can create new project in to netlify, vercel or cloudflare and connect with your github repo project and deploy it.</li>
+</ul>
+<hr>
+<h2 id="need-help" tabindex="-1">Need Help ?? <a class="header-anchor" href="#need-help"></a></h2>
+<hr>
+<p>If you need help or want to consult about your project, don’t hesitate to contact me.</p>
+<p>Developer : <a href="https://adamdjbrett.com">Adam DJ Brett</a><br>
+Website: <a href="https://adamdjbrett.com">www.adamdjbrett.com</a><br>
+Email: <a href="mailto:info@adamdjbrett.com">info@adamdjbrett.com</a></p>
+</section>
+</heading-anchors>
+
+
+</main>
+<footer>
+<p class="text-center text-small">Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a> Develop by <a href="https://www.adamdjbrett.com/">Adam DJ Brett</a></p>
+</footer>
+<script>
+
+  function myMenu() {
+    const dropdown = document.getElementById('myMenu') 
+    dropdown.classList.toggle('show')
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.hamburger')) {
+      var dropdowns = document.getElementsByClassName('dropdown-content')
+      var i
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i]
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show')
+        }
+      }
+    }
+  }
+</script>
+
+<script type="module" src="/dist/xbxy_EL6cU.js"></script>
+</body>
+</html>

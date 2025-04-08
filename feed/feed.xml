@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="pretty-atom-feed.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>Blog Title</title>
+  <subtitle>This is a longer description about your blog.</subtitle>
+  <link href="https://example.com/feed/feed.xml" rel="self" />
+  <link href="https://example.com/" />
+  <updated>2025-01-08T00:00:00Z</updated>
+  <id>https://example.com/</id>
+  <author>
+    <name>Your Name</name>
+  </author>
+  <entry>
+    <title>Side Notes Internal Link Example ShortCodes</title>
+    <link href="https://example.com/blog/side-notes-internal/" />
+    <updated>2025-01-08T00:00:00Z</updated>
+    <id>https://example.com/blog/side-notes-internal/</id>
+    <content type="html">&lt;h3 id=&quot;sit-amet&quot; tabindex=&quot;-1&quot;&gt;Sit Amet &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/side-notes-internal/#sit-amet&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;newthought&quot; id=&quot;sn-1b&quot;&gt;Title Side Notes&lt;label for=&quot;sn-1b&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;/span&gt;&lt;input type=&quot;checkbox&quot; class=&quot;margin-toggle&quot;&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;a href=&quot;https://example.com/blog/side-notes-internal/#sn-1b&quot; class=&quot;no-deco&quot;&gt;&lt;em&gt;Side Notes Information&lt;/em&gt;&lt;/a&gt;&lt;/span&gt;, This is a example content article for your side notes features.&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;newthought&quot; id=&quot;sn-2b&quot;&gt;Title Side Notes 2&lt;label for=&quot;sn-2b&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;/span&gt;&lt;input type=&quot;checkbox&quot; class=&quot;margin-toggle&quot;&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;a href=&quot;https://example.com/blog/side-notes-internal/#sn-2b&quot; class=&quot;no-deco&quot;&gt;&lt;em&gt;Side Notes Information 2&lt;/em&gt;&lt;/a&gt;&lt;/span&gt;, 2. This is a example content article for your side notes features.&lt;/p&gt;
+&lt;h3 id=&quot;side-note-code-format&quot; tabindex=&quot;-1&quot;&gt;Side Note Code Format &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/side-notes-internal/#side-note-code-format&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;span class=&amp;quot;newthought&amp;quot; id=&amp;quot;sn-1b&amp;quot; &amp;gt;Title Side Notes&amp;lt;label for=&amp;quot;sn-1b&amp;quot; class=&amp;quot;margin-toggle sidenote-number&amp;quot;&amp;gt;&amp;lt;/label&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot; class=&amp;quot;margin-toggle&amp;quot;/&amp;gt;&amp;lt;span class=&amp;quot;sidenote&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;#sn-1b&amp;quot; class=&amp;quot;no-deco&amp;quot;&amp;gt;&amp;lt;em&amp;gt;Side Notes Information&amp;lt;/em&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;, This is a example content article for your side notes features.
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Side Notes External Link Example ShortCodes</title>
+    <link href="https://example.com/blog/side-notes-external/" />
+    <updated>2025-01-08T00:00:00Z</updated>
+    <id>https://example.com/blog/side-notes-external/</id>
+    <content type="html">&lt;h3 id=&quot;sit-amet&quot; tabindex=&quot;-1&quot;&gt;Sit Amet &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/side-notes-external/#sit-amet&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;Title Side Notes&lt;label for=&quot;sn-1b&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;/span&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-1b&quot; class=&quot;margin-toggle&quot;&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;em&gt;Side Notes Information&lt;/em&gt; &lt;a href=&quot;https://adamdjbrett.com&quot;&gt;Check this url&lt;/a&gt;&lt;/span&gt;, This is a example content article for your side notes features.&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;Title Side Notes part two&lt;label for=&quot;sn-2b&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;/span&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-2b&quot; class=&quot;margin-toggle&quot;&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;em&gt;Side Notes Two Information&lt;/em&gt; &lt;a href=&quot;https://adamdjbrett.com&quot;&gt;Check this url two&lt;/a&gt;&lt;/span&gt;, This is a example content article two for your side notes features.&lt;/p&gt;
+&lt;h3 id=&quot;side-note-code-format&quot; tabindex=&quot;-1&quot;&gt;Side Note Code Format &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/side-notes-external/#side-note-code-format&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;span class=&amp;quot;newthought&amp;quot;&amp;gt;Title Side Notes&amp;lt;label for=&amp;quot;sn-1b&amp;quot; class=&amp;quot;margin-toggle sidenote-number&amp;quot;&amp;gt;&amp;lt;/label&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot; id=&amp;quot;sn-1b&amp;quot; class=&amp;quot;margin-toggle&amp;quot;/&amp;gt;&amp;lt;span class=&amp;quot;sidenote&amp;quot;&amp;gt;&amp;lt;em&amp;gt;Side Notes Information&amp;lt;/em&amp;gt; &amp;lt;a href=&amp;quot;https://adamdjbrett.com&amp;quot;&amp;gt;Check this url&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;, This is a example content article for your side notes features. 
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Side Notes Example ShortCodes</title>
+    <link href="https://example.com/blog/side-notes-example/" />
+    <updated>2025-01-08T00:00:00Z</updated>
+    <id>https://example.com/blog/side-notes-example/</id>
+    <content type="html">&lt;h3 id=&quot;sit-amet&quot; tabindex=&quot;-1&quot;&gt;Sit Amet &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/side-notes-example/#sit-amet&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;Title Side Notes&lt;label for=&quot;sn-1b&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;/span&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-1b&quot; class=&quot;margin-toggle&quot;&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;a href=&quot;https://example.com/blog/side-notes-example/#sn-1b&quot; class=&quot;no-deco&quot;&gt;&lt;em&gt;Side Notes Information&lt;/em&gt;&lt;/a&gt;&lt;/span&gt;, This is a example content article for your side notes features.&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;h3 id=&quot;side-note-code-format&quot; tabindex=&quot;-1&quot;&gt;Side Note Code Format &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/side-notes-example/#side-note-code-format&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;span class=&amp;quot;newthought&amp;quot;&amp;gt;Title Side Notes&amp;lt;label for=&amp;quot;sn-1b&amp;quot; class=&amp;quot;margin-toggle sidenote-number&amp;quot;&amp;gt;&amp;lt;/label&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot; id=&amp;quot;sn-1b&amp;quot; class=&amp;quot;margin-toggle&amp;quot;/&amp;gt;&amp;lt;span class=&amp;quot;sidenote&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;#sn-1b&amp;quot; class=&amp;quot;no-deco&amp;quot;&amp;gt;&amp;lt;em&amp;gt;Side Notes Information&amp;lt;/em&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;, This is a example content article for your side notes features.
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Notes Example ShortCodes</title>
+    <link href="https://example.com/blog/notes-example/" />
+    <updated>2025-01-08T00:00:00Z</updated>
+    <id>https://example.com/blog/notes-example/</id>
+    <content type="html">&lt;h3 id=&quot;ipsum-dolor&quot; tabindex=&quot;-1&quot;&gt;Ipsum Dolor &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/notes-example/#ipsum-dolor&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;p&gt;&lt;label for=&quot;1s&quot; class=&quot;margin-toggle&quot;&gt;⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;1s&quot; class=&quot;margin-toggle&quot;&gt;&lt;span class=&quot;marginnote&quot;&gt;This is a example for notes features.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;h3 id=&quot;notes-code-format&quot; tabindex=&quot;-1&quot;&gt;Notes Code Format &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/notes-example/#notes-code-format&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;label for=&amp;quot;1s&amp;quot; class=&amp;quot;margin-toggle&amp;quot;&amp;gt;&amp;amp;#8853;&amp;lt;/label&amp;gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot; id=&amp;quot;1s&amp;quot; class=&amp;quot;margin-toggle&amp;quot;/&amp;gt;&amp;lt;span class=&amp;quot;marginnote&amp;quot;&amp;gt;This is a example for notes features.&amp;lt;/span&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Epigraph Example ShortCodes</title>
+    <link href="https://example.com/blog/epigraph/" />
+    <updated>2025-01-08T00:00:00Z</updated>
+    <id>https://example.com/blog/epigraph/</id>
+    <content type="html">&lt;h3 id=&quot;epigraph-shortcode&quot; tabindex=&quot;-1&quot;&gt;Epigraph ShortCode &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/epigraph/#epigraph-shortcode&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt;The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts.&lt;/p&gt;&lt;footer&gt;George Orwell, &#39;Politics and the English Language&#39;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;h3 id=&quot;epigraph-code-format&quot; tabindex=&quot;-1&quot;&gt;Epigraph Code Format &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/epigraph/#epigraph-code-format&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;epigraph&amp;quot;&amp;gt;&amp;lt;blockquote&amp;gt;&amp;lt;p&amp;gt;The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts.&amp;lt;/p&amp;gt;&amp;lt;footer&amp;gt;George Orwell, &#39;Politics and the English Language&#39;&amp;lt;/footer&amp;gt;&amp;lt;/blockquote&amp;gt;&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Epigraph with URL Link Example ShortCodes</title>
+    <link href="https://example.com/blog/epigraph-link/" />
+    <updated>2025-01-08T00:00:00Z</updated>
+    <id>https://example.com/blog/epigraph-link/</id>
+    <content type="html">&lt;h3 id=&quot;epigraph-with-url-link-shortcode&quot; tabindex=&quot;-1&quot;&gt;Epigraph with URL Link ShortCode &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/epigraph-link/#epigraph-with-url-link-shortcode&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;epigraph&quot;&gt;&lt;blockquote&gt;&lt;p&gt;The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts.&lt;/p&gt;&lt;footer&gt;George Orwell, &#39;Politics and the English Language&#39; &lt;a href=&quot;https://adamdjbrett.com&quot;&gt;Click Me&lt;/a&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;h3 id=&quot;epigraph-code-format&quot; tabindex=&quot;-1&quot;&gt;Epigraph Code Format &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/epigraph-link/#epigraph-code-format&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;epigraph&amp;quot;&amp;gt;&amp;lt;blockquote&amp;gt;&amp;lt;p&amp;gt;The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts.&amp;lt;/p&amp;gt;&amp;lt;footer&amp;gt;George Orwell, &#39;Politics and the English Language&#39; &amp;lt;a href=&amp;quot;https://adamdjbrett.com&amp;quot;&amp;gt;Click Me&amp;lt;/a&amp;gt;&amp;lt;/footer&amp;gt;&amp;lt;/blockquote&amp;gt;&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Code Example</title>
+    <link href="https://example.com/blog/code/" />
+    <updated>2025-01-08T00:00:00Z</updated>
+    <id>https://example.com/blog/code/</id>
+    <content type="html">&lt;p&gt;Code&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;pre&amp;gt;
+    &amp;lt;code&amp;gt;
+This is code
+    &amp;lt;/code&amp;gt;
+&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and 11ty code blocks also work&lt;/p&gt;
+&lt;h2 id=&quot;js&quot; tabindex=&quot;-1&quot;&gt;JS &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/code/#js&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;myFunction&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;python&quot; tabindex=&quot;-1&quot;&gt;Python &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/code/#python&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class=&quot;language-python&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;This line will be printed.&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Blockquote Example ShortCodes</title>
+    <link href="https://example.com/blog/blockquote/" />
+    <updated>2025-01-08T00:00:00Z</updated>
+    <id>https://example.com/blog/blockquote/</id>
+    <content type="html">&lt;h3 id=&quot;blockquote-shortcode&quot; tabindex=&quot;-1&quot;&gt;Blockquote ShortCode &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/blockquote/#blockquote-shortcode&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;h4 id=&quot;shortcode-blockquote&quot; tabindex=&quot;-1&quot;&gt;Shortcode BlockQuote &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/blockquote/#shortcode-blockquote&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;blockquote&gt;&lt;p&gt;The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts.&lt;/p&gt;&lt;footer&gt;George Orwell, &#39;Politics and the English Language&#39;&lt;/footer&gt;&lt;/blockquote&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;h4 id=&quot;default-blockquote&quot; tabindex=&quot;-1&quot;&gt;Default BlockQuote &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/blockquote/#default-blockquote&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;br&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Gets Tufte 11ty&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;blockquote-code-format&quot; tabindex=&quot;-1&quot;&gt;Blockquote Code Format &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/blockquote/#blockquote-code-format&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;blockquote&amp;gt;&amp;lt;p&amp;gt;The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts.&amp;lt;/p&amp;gt;&amp;lt;footer&amp;gt;George Orwell, &#39;Politics and the English Language&#39;&amp;lt;/footer&amp;gt;&amp;lt;/blockquote&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Blockquote Example ShortCodes</title>
+    <link href="https://example.com/blog/blockquote-link/" />
+    <updated>2025-01-08T00:00:00Z</updated>
+    <id>https://example.com/blog/blockquote-link/</id>
+    <content type="html">&lt;h3 id=&quot;blockquote-with-url-link-shortcode&quot; tabindex=&quot;-1&quot;&gt;Blockquote with URL Link ShortCode &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/blockquote-link/#blockquote-with-url-link-shortcode&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;h4 id=&quot;shortcode-blockquote-with-url-link&quot; tabindex=&quot;-1&quot;&gt;Shortcode BlockQuote with URL Link &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/blockquote-link/#shortcode-blockquote-with-url-link&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;blockquote&gt;&lt;p&gt;The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts.&lt;/p&gt;&lt;footer&gt;George Orwell, &#39;Politics and the English Language&#39; &lt;a href=&quot;https://adamdjbrett.com&quot;&gt;Click Me&lt;/a&gt;&lt;/footer&gt;&lt;/blockquote&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;h4 id=&quot;default-blockquote-with-url-link&quot; tabindex=&quot;-1&quot;&gt;Default BlockQuote with URL Link &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/blockquote-link/#default-blockquote-with-url-link&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;br&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/adamdjbrett/11ty-gets-tufte/&quot;&gt;Gets Tufte 11ty&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;blockquote-with-url-link-code-format&quot; tabindex=&quot;-1&quot;&gt;Blockquote with URL Link Code Format &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/blockquote-link/#blockquote-with-url-link-code-format&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;blockquote&amp;gt;&amp;lt;p&amp;gt;The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts.&amp;lt;/p&amp;gt;&amp;lt;footer&amp;gt;George Orwell, &#39;Politics and the English Language&#39; &amp;lt;a href=&amp;quot;https://adamdjbrett.com&amp;quot;&amp;gt;Click Me&amp;lt;/a&amp;gt;&amp;lt;/footer&amp;gt;&amp;lt;/blockquote&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Video Example ShortCodes</title>
+    <link href="https://example.com/blog/video/" />
+    <updated>2025-01-07T00:00:00Z</updated>
+    <id>https://example.com/blog/video/</id>
+    <content type="html">&lt;h3 id=&quot;sed-do-eiusmod&quot; tabindex=&quot;-1&quot;&gt;Sed Do Eiusmod &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/video/#sed-do-eiusmod&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+&lt;figure class=&quot;iframe-wrapper&quot;&gt;&lt;iframe width=&quot;100%&quot; height=&quot;auto&quot; src=&quot;https://www.youtube.com/embed/7hiUvyxRIOY&quot; title=&quot;title of your video&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;figure&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;h3 id=&quot;video-code-format&quot; tabindex=&quot;-1&quot;&gt;Video Code Format &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/video/#video-code-format&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;figure class=&amp;quot;iframe-wrapper&amp;quot;&amp;gt;&amp;lt;iframe width=&amp;quot;100%&amp;quot; height=&amp;quot;auto&amp;quot; src=&amp;quot;https://www.youtube.com/embed/7hiUvyxRIOY&amp;quot; title=&amp;quot;title of your video&amp;quot; frameborder=&amp;quot;0&amp;quot; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&amp;lt;figure&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/figure&gt;&lt;/figure&gt;</content>
+  </entry>
+</feed>

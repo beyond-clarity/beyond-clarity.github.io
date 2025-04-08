@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search</title>
+<meta content="Search" property="og:title">
+<meta content="Search" name="twitter:title">
+<meta content="Search" name="title">
+<meta content="Search" property="og:site_name">
+<meta content="What are you looking for.." name="description">
+<meta content="What are you looking for.." property="facebook:description">
+<meta content="What are you looking for.." property="og:description">
+<meta content="What are you looking for.." name="twitter:description">
+<meta property="twitter:card" content="summary_large_image">
+<meta content="/img/orange.svg" name="twitter:image">
+<meta content="/img/orange.svg" name="facebook:image">
+<meta content="/img/orange.svg" name="og:image">
+<link href="/img/orange.svg" rel="icon" type="image/x-icon">
+<meta content="" property="facebook:author">
+<meta content="@memming" property="twitter:author">
+<meta content="https://x.com/memming" name="twitter:site">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://tufte.000000076.xyz//search/">
+<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Beyond Clarity Project">
+<meta name="language" content="en">
+<meta name="locale" content="en_US">
+<meta property="og:locale" content="en_US">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","description":"Smooth exchanges between the discrete and the continuous","headline":"Beyond Clarity Project - Smooth exchanges between the discrete and the continuous","name":"Beyond Clarity Project","url":"https://tufte.000000076.xyz//search/"}</script>
+<link rel="apple-touch-icon" href="/img/orange.svg">
+<meta name="generator" content="Eleventy v3.0.0">
+<link rel="preload" href="/css/gill-sans-2.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/gill-sans-2.css"></noscript>
+<style>@charset "UTF-8";
+@font-face {
+  font-family: "et-book";
+  src: url("/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
+  src: url("/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "et-book";
+  src: url("/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
+  src: url("/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
+  font-display: swap;
+  font-weight: normal;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "et-book";
+  src: url("/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
+  src: url("/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
+  font-display: swap;
+  font-weight: bold;
+  font-style: normal
+}
+
+/* Customization */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.skip-link {
+    background: #000000;
+    height: 30px;
+    left: 50%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+
+}
+
+.skip-link:focus {
+    transform: translateY(0%);
+
+}
+
+
+/* Tufte CSS styles */
+body {
+    width: 87.5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8.5%;
+    background-color: #151515;
+    color: white;
+    font-size: 15px;
+    font-family: et-book, "Gill Sans Nova", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #151515;
+    color: white;
+    counter-reset: sidenote-counter;
+}
+
+
+h1 {
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 3.2rem;
+    line-height: 1;
+}
+
+h2 {
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 2.1rem;
+    margin-bottom: 1.4rem;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+h3 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    margin-bottom: 1.4rem;
+    line-height: 1;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 55%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+p.subtitle {
+    font-style: italic;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    display: block;
+    line-height: 1;
+}
+
+.numeral {
+}
+
+.danger {
+    color: red;
+}
+
+article {
+    padding: 5rem 0rem;
+}
+
+section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+p,
+dl,
+ol,
+ul {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+p {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding-right: 0;
+    vertical-align: baseline;
+}
+
+/* Chapter Epigraphs */
+div.epigraph {
+    margin: 5em 0;
+}
+
+div.epigraph > blockquote {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+div.epigraph > blockquote,
+div.epigraph > blockquote > p {
+    font-style: italic;
+}
+
+div.epigraph > blockquote > footer {
+    font-style: normal;
+}
+
+div.epigraph > blockquote > footer > cite {
+    font-style: italic;
+}
+/* end chapter epigraphs styles */
+
+blockquote {
+    font-size: 1.4rem;
+}
+
+blockquote p {
+    width: 55%;
+    margin-right: 40px;
+}
+
+blockquote footer {
+    width: 55%;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+section > p,
+section > footer,
+section > table {
+    width: 55%;
+}
+
+/* 50 + 5 == 55, to be the same width as paragraph */
+section > dl,
+section > ol,
+section > ul {
+    width: 50%;
+    -webkit-padding-start: 5%;
+}
+
+dt:not(:first-child),
+li:not(:first-child) {
+    margin-top: 0.25rem;
+}
+
+figure {
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    max-width: 55%;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin: 0 0 3em 0;
+}
+
+figcaption {
+    float: right;
+    clear: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    vertical-align: baseline;
+    position: relative;
+    max-width: 40%;
+}
+
+figure.fullwidth figcaption {
+    margin-right: 24%;
+}
+
+a:link,
+a:visited {
+    color: inherit;
+    text-underline-offset: 0.1em;
+    text-decoration-thickness: 0.05em;
+}
+
+/* Sidenotes, margin notes, figures, captions */
+img {
+    max-width: 100%;
+}
+
+.sidenote,
+.marginnote {
+    float: right;
+    clear: right;
+    margin-right: -60%;
+    width: 50%;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    vertical-align: baseline;
+    position: relative;
+}
+
+.sidenote-number {
+    counter-increment: sidenote-counter;
+}
+
+.sidenote-number:after,
+.sidenote:before {
+    position: relative;
+    vertical-align: baseline;
+}
+
+.sidenote-number:after {
+    content: counter(sidenote-counter);
+    font-size: 1rem;
+    top: -0.5rem;
+    left: 0.1rem;
+}
+
+.sidenote:before {
+    content: counter(sidenote-counter) " ";
+    font-size: 1rem;
+    top: -0.5rem;
+}
+
+blockquote .sidenote,
+blockquote .marginnote {
+    margin-right: -82%;
+    min-width: 59%;
+    text-align: left;
+}
+.fullwidth
+div.fullwidth,
+table.fullwidth {
+    width: 100%;
+}
+
+div.table-wrapper {
+    overflow-x: auto;
+    font-family: "Gill Sans", "Gill Sans MT", "Gill Sans Nova", "Trebuchet MS", sans-serif;
+}
+
+.sans {
+    font-family: "Gill Sans", "Gill Sans MT", "Gill Sans Nova", Calibri, sans-serif;
+    letter-spacing: .03em;
+}
+
+code, pre > code {
+    font-family: Courier, Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 1.0rem;
+    line-height: 1.42;
+    -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+}
+
+.sans > code {
+    font-size: 1.2rem;
+}
+
+h1 > code,
+h2 > code,
+h3 > code {
+    font-size: 0.80em;
+}
+
+.marginnote > code,
+.sidenote > code {
+    font-size: 1rem;
+}
+
+pre > code {
+    font-size: 0.9rem;
+    width: 52.5%;
+    margin-left: 2.5%;
+    overflow-x: auto;
+    display: block;
+}
+
+pre.fullwidth > code {
+    width: 90%;
+}
+
+.fullwidth {
+    max-width: 90%;
+    clear:both;
+}
+
+span.newthought {
+    font-variant: small-caps;
+    font-size: 1.2em;
+}
+
+input.margin-toggle {
+    display: none;
+}
+
+label.sidenote-number {
+    display: inline-block;
+    max-height: 2rem; /* should be less than or equal to paragraph line-height */
+}
+
+label.margin-toggle:not(.sidenote-number) {
+    display: none;
+}
+
+.iframe-wrapper {
+    position: relative;
+    padding-bottom: 480px; /* 16:9 */
+    padding-top: 10px;
+    height: 0;
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 460px;
+}
+
+@media (max-width: 760px) {
+    body {
+        width: 84%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    hr,
+    section > p,
+    section > footer,
+    section > table {
+        width: 100%;
+    }
+
+    pre > code {
+        width: 97%;
+    }
+
+    section > dl,
+    section > ol,
+    section > ul {
+        width: 90%;
+    }
+
+    figure {
+        max-width: 90%;
+    }
+
+    figcaption,
+    figure.fullwidth figcaption {
+        margin-right: 0%;
+        max-width: none;
+    }
+
+    blockquote {
+        margin-left: 1.5em;
+        margin-right: 0em;
+    }
+
+    blockquote p,
+    blockquote footer {
+        width: 100%;
+    }
+
+    label.margin-toggle:not(.sidenote-number) {
+        display: inline;
+    }
+
+    .sidenote,
+    .marginnote {
+        display: none;
+    }
+
+    .margin-toggle:checked + .sidenote,
+    .margin-toggle:checked + .marginnote {
+        display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 95%;
+        margin: 1rem 2.5%;
+        vertical-align: baseline;
+        position: relative;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    div.table-wrapper,
+    table {
+        width: 85%;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+button,.btn {border:none;}
+.black {
+background-color: #151515;
+color: white;
+}
+
+  .hamburger {
+    cursor: pointer;
+    list-style: none;
+    float: right;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .bar1, .bar2,.bar3 {
+    width: 16px;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 5px;
+  }
+
+  .dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: #BE234D;
+  }
+
+  .dropdown {
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    background-color: black;
+    min-width: 160px;
+    overflow: auto;
+    opacity: 0.8;
+    border-radius: 16px;
+    color:white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown a:hover {
+    background-color: #BE234D;
+  }
+
+  .show {
+    display: block;
+  }
+.rounder {border-radius: 16px;}
+.navi-btn {background-color:#E72257; border-radius:50px;}
+.navis-btn {
+border-radius:50px;
+background-color: #E72257;
+padding: auto;
+text-align: center;
+justify-content: center;
+align-items: center;
+}
+.buttonis-nav {
+background-color: #E72257;
+color: #151515;
+border-radius: 50px;
+padding:5px;
+margin-bottom: 15px;
+}
+button,btn,.buttonis {
+background-color: #E72257;
+color: #151515;
+border-radius: 5px;
+padding:5px;
+}
+.buttonis-nav:hover, .buttonis:hover ,.navi-btn:hover,.navis-btn:hover {background-color:#BE234D;color: white;}
+.no-deco {text-decoration: none;}
+.py-5 {padding-left: 15px; padding-right:15px;}
+.me-5 {margin-left:15px;}
+.pt-5 {padding-top:12px;}
+.pt-3 {padding-top:5px;}
+.pt-30 {margin-top:50px;}
+.p-10 {padding:10px;}
+.taptoc {padding:8px; font-size:16px; margin:auto;}
+.red {color:red;}
+.text-center {text-align:center;}
+.text-small {font-size:13px;}
+.mt-5 {margin-top: 35px;}
+.text-pinky {color: #E72257;}
+.taptoc ul,ul.taptoc {font-size:16px;}
+li.pagefind-ui__result , p.pagefind-ui__result-title {color:white;}
+
+@media only screen and (min-width: 400px) and (max-width: 600px){
+.navbar {
+margin-left:-47px;
+margin-top:12px;
+position: fixed;
+background: rgba(21, 21, 21, 0.6);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(21, 21, 21, 0.3);
+}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+.navbar {
+margin-left:-62px;
+margin-top:12px;
+position: fixed;
+background: rgba(21, 21, 21, 0.6);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(21, 21, 21, 0.3);
+}
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+.navbar {
+margin-left:-122px;
+margin-top:12px;
+position: fixed;
+background: rgba(21, 21, 21, 0.6);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(21, 21, 21, 0.3);
+}
+}
+
+@media only screen and (min-width: 1400px){
+.navbar {
+margin-left:-202px;
+margin-top:12px;
+position: fixed;
+background: rgba(21, 21, 21, 0.6);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(21, 21, 21, 0.3);
+}
+}</style>
+
+</head>
+<body>
+<a href="#maincontent" class="skip-link">Skip to main content</a>
+<main class="fullwidth" id="maincontent">
+<navbar class="navbar pt-5">
+<div class="dropdown">
+<button type="button" tabindex="0" class="hamburger navi-btn" aria-label="Menu" onclick="myMenu()">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</button>
+<div id="myMenu" class="dropdown-content">
+<a href="/">Home</a><a href="/meetings/bc2025">BC2025</a><a href="/search/">Search</a>
+</div>
+</div>
+
+
+</navbar>
+
+<header class="pt-3">
+<h1 id="search-2"><a class="no-deco text-pinky" href="/search/">Search</a></h1>
+<h2 class="sub-title" id="what-are-you-looking-for">What are you looking for..</h2>
+</header>
+
+<heading-anchors>
+<section><link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+<div class="text-white">
+<div id="search"></div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search", showSubResults: true });
+    });
+</script>
+</div>
+</section>
+</heading-anchors>
+
+
+</main>
+<footer>
+<p class="text-center text-small">Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a> Develop by <a href="https://www.adamdjbrett.com/">Adam DJ Brett</a></p>
+</footer>
+<script>
+
+  function myMenu() {
+    const dropdown = document.getElementById('myMenu') 
+    dropdown.classList.toggle('show')
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.hamburger')) {
+      var dropdowns = document.getElementsByClassName('dropdown-content')
+      var i
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i]
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show')
+        }
+      }
+    }
+  }
+</script>
+
+<script type="module" src="/dist/xbxy_EL6cU.js"></script>
+</body>
+</html>
