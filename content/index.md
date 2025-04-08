@@ -1,23 +1,15 @@
 ---
-title: 11ty gets tufte
-description: A Tufte CSS Project built with 11ty aka Eleventy for your projects. 
+title: Beyond Clarity
+description: Smooth exchanges between the discrete and the continuous
 ---
-Hi and welcome in to 11ty gets tufte project.
+{% notesimage "waterB", "/img/water_B.png" , "Capital B with water inside" , ""%}
 
-{% notesimage "2s", "/img/11ty-gets-tufte.svg" , "11ty gets tufte" , "11ty gets tufte - Free and open source code"%}
 
-An 11ty project based on the work of [Edward Tufte](https://edwardtufte.com). This 11ty project uses [tufte-css](https://github.com/edwardtufte/tufte-css) and [et-book, a web typeface of the font used in Edward Tufte's books](https://github.com/edwardtufte/et-book). The failover font is Gil Sans which is also a prefered font of Edward Tufte. Thank you Dave Liepman the creator of `tufte.css` and to all of the contributors to [Tufte-CSS](https://github.com/edwardtufte/tufte-css). 
+Continuity and discreteness are often seen as complementary or contradictory across fields from engineering and mathematics to neuroscience, linguistics, philosophy, religion, and more. To many of us, the richness of the world is accessed via discrete descriptions, but a large, vague gap remains. We strive to make a conceptual advance through an exploration of the discrete and the continuous.
+
+Beyond Clarity is an interdisciplinary project started by brothers [Il Memming Park](https://www.memming.com/) and [Sool Park](https://www.uni-hildesheim.de/glophi/team/principal-investigators/sool-park/).
 
 * * *
 
-This 11ty port is maintained and developed by [Adam DJ Brett](https://www.adamdjbrett.com) to help you build a book site easily and quickly!!!
-
-I admire not only Tufte's work but also `tufte.css` because of their simplicity, sidenotes, typography, and  multiple types of images that can be used.
-
-**Clone / Fork this Project**
-
-`git clone https://github.com/adamdjbrett/11ty-gets-tufte.git`
-
-[Download Now](https://github.com/adamdjbrett/11ty-gets-tufte/) or [Get Started](/doc/)
-
-
+On April 26 and 27, 2025, our [first workshop](meetings/bc2025.md) will be held at Champalimaud Centre for the Unknown.
+Our focus will be **natural and neural languages**.

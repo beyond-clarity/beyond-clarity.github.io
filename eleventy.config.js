@@ -97,6 +97,12 @@ eleventyConfig.addPlugin(pluginSyntaxHighlight, {
 	eleventyConfig.addPlugin(pluginshortCodes);
 	eleventyConfig.addPlugin(IdAttributePlugin, {
 	});
+    // Create a "meetings" collection sorted by date
+    eleventyConfig.addCollection("meetings", function (collectionApi) {
+        return collectionApi.getFilteredByTag("meetings").sort((a, b) => {
+            return new Date(a.date) - new Date(b.date); // Sort by date ascending
+        });
+    });
 };
 export const config = {
 	templateFormats: [
