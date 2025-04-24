@@ -11,5 +11,5 @@ Beyond Clarity is an interdisciplinary project started by brothers [Il Memming P
 
 * * *
 
-On April 26 and 27, 2025, our [first workshop](meetings/bc2025.md) will be held at Champalimaud Centre for the Unknown.
+On April 27 and 28, 2025, our [first workshop](meetings/bc2025.md) will be held at Champalimaud Centre for the Unknown.
 Our focus will be **natural and neural languages**.
