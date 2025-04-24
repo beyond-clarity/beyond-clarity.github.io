@@ -19,7 +19,7 @@
 
 /* SITE */
 
-	Last update: Sun Mar 23 2025 02:34:57 GMT-0700 (Mountain Standard Time)
+	Last update: Sun Mar 23 2025 09:34:57 GMT+0000 (Western European Standard Time)
 	Language: English
   Generator: Eleventy
   Theme: Front Cover  Theme
