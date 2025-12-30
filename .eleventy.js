@@ -42,7 +42,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("site/assets");
   eleventyConfig.addPassthroughCopy("site/config.json");
   eleventyConfig.addPassthroughCopy("site/feed/pretty-atom-feed.xsl");
-  eleventyConfig.addPassthroughCopy("site/participants.html");
 
   // Copy raw Markdown posts for client-side rendering (optional, for future use)
   // eleventyConfig.addPassthroughCopy({ "site/posts": "posts" });
