@@ -1,27 +1,5 @@
-# 11ty-Gets-Tufte
-Bringing [tufte.css](https://github.com/edwardtufte/tufte-css) to [11ty](https://11ty.dev)
+# Beyond Clarity
 
-![Gets Tufte 11ty](getstufte11ty.jpeg)
+This repository contains the source code for the Beyond Clarity website, an interdisciplinary project exploring the relationship between discrete and continuous representations across fields including neuroscience, linguistics, philosophy, mathematics, and art. The site documents workshops, participants, and discussions focused on understanding how language, perception, and conceptual frameworks navigate the boundary between the discrete and the continuous. This site is based on the [11ty-Gets-Tufte](https://github.com/adamdjbrett/11ty-gets-tufte) template, which brings [Tufte CSS](https://github.com/edwardtufte/tufte-css) styling to Eleventy, and has been significantly modified using AI coding agents to implement server-side rendering, migrate to a simplified structure, and add custom features.
 
-Minimalist Themes for your books site with Gets Tufte 11ty Projects.
-
-Developed by [Adam DJ Brett](https://adamdjbrett.com)
-
-[Follow on Github](https://github.com/adamdjbrett)
-
----
-
-Mobile Target Test
-
-![Gets Tufte 11ty Mobile](mobile.png)
-
-Desktop Target Test
-
-![Gets Tufte 11ty Desktop](desktop.png)
-
----
-
-Developed by [Adam DJ Brett](https://adamdjbrett.com)
-
-[Follow on Github](https://github.com/adamdjbrett)
-
+The site is built with [11ty (Eleventy)](https://www.11ty.dev/) as a static site generator with server-side rendering, and is automatically deployed to GitHub Pages. The live site is available at [https://beyond-clarity.github.io/](https://beyond-clarity.github.io/).
