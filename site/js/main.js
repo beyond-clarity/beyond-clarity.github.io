@@ -17,7 +17,7 @@ async function loadPosts() {
     // Render post list
     postListEl.innerHTML = posts.map(post => `
       <div class="post-item">
-        <h3><a href="/${post.permalink}/">${post.title}</a></h3>
+        <h3><a href="${post.permalink}">${post.title}</a></h3>
         <div class="post-meta">
           <time datetime="${post.date}">${formatDate(post.date)}</time>
         </div>
@@ -58,7 +58,7 @@ async function loadDrafts() {
       </p>
       ${drafts.map(draft => `
         <div class="post-item" style="border-left: 3px solid #e67e22; padding-left: 1rem;">
-          <h3><a href="/${draft.permalink}/?draft=true">${draft.title}</a> <span style="color: #e67e22; font-size: 0.8em;">[DRAFT]</span></h3>
+          <h3><a href="${draft.permalink}?draft=true">${draft.title}</a> <span style="color: #e67e22; font-size: 0.8em;">[DRAFT]</span></h3>
           <div class="post-meta">
             <time datetime="${draft.date}">${formatDate(draft.date)}</time>
           </div>
@@ -98,29 +98,29 @@ async function checkIfInvalidPost() {
     return true; // Homepage is valid
   }
   
-  // Extract permalink
-  const permalink = pathname.replace(/^\//, '').replace(/\/$/, '');
-  
-  if (!permalink) {
-    return true; // Empty permalink means homepage
-  }
-  
-  try {
-    // Load posts index to check if permalink exists
-    const response = await fetch('/posts/index.json');
-    if (!response.ok) return true; // Can't check, assume valid
+    // Extract permalink (normalize to match JSON format with leading/trailing slashes)
+    const permalink = pathname.endsWith('/') ? pathname : `${pathname}/`;
     
-    const postsText = await response.text();
-    console.log('Fetched posts:', postsText.substring(0, 100));
-    let posts;
-    try {
-      posts = JSON.parse(postsText);
-    } catch (e) {
-      console.error('Failed to parse posts JSON:', e, 'Response:', postsText);
-      return;
+    if (permalink === '/' || permalink === '') {
+      return true; // Empty permalink means homepage
     }
     
-    const post = posts.find(p => p.permalink === permalink);
+    try {
+      // Load posts index to check if permalink exists
+      const response = await fetch('/posts/index.json');
+      if (!response.ok) return true; // Can't check, assume valid
+      
+      const postsText = await response.text();
+      console.log('Fetched posts:', postsText.substring(0, 100));
+      let posts;
+      try {
+        posts = JSON.parse(postsText);
+      } catch (e) {
+        console.error('Failed to parse posts JSON:', e, 'Response:', postsText);
+        return;
+      }
+      
+      const post = posts.find(p => p.permalink === permalink);
     
     // If not found in posts, check drafts (dev only)
     if (!post) {
