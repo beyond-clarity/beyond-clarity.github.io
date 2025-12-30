@@ -7,7 +7,7 @@ layout: false
 {%- for post in collections.posts -%}
   {
     "title": {{ post.data.title | dump | safe }},
-    "permalink": "/{{ post | permalinkSlug }}/",
+    "permalink": "{{ (post.data.permalink | default('/' + (post | permalinkSlug) + '/')) | normalizePermalink }}",
     "filename": "{{ post.fileSlug }}",
     "date": "{{ post.data.date }}"{% if post.data.updated %},
     "updated": {{ post.data.updated | dump | safe }}{% endif %}{% if post.data.tags %},

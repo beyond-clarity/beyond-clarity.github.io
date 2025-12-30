@@ -35,6 +35,14 @@ module.exports = function(eleventyConfig) {
     return permalink.replace(/^\/|\/$/g, '');
   });
 
+  // Add filter to normalize permalink (ensure single leading/trailing slash)
+  eleventyConfig.addFilter('normalizePermalink', function(permalink) {
+    if (!permalink) return '/';
+    // Remove all leading/trailing slashes, then add exactly one of each
+    const cleaned = permalink.replace(/^\/+|\/+$/g, '');
+    return '/' + cleaned + '/';
+  });
+
   // Passthrough static assets
   eleventyConfig.addPassthroughCopy("site/styles");
   eleventyConfig.addPassthroughCopy("site/styles.css");
