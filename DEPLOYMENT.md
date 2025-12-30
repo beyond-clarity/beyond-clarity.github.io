@@ -66,34 +66,6 @@ You can also manually trigger deployment:
 - Select "Deploy to GitHub Pages" workflow
 - Click "Run workflow"
 
-## Manual Deployment (Alternative)
-
-If you prefer manual deployment or need to troubleshoot:
-
-### Option 1: Deploy from `_site/` to `gh-pages` branch
-
-```bash
-# Build the site
-npm run build
-
-# Deploy to gh-pages branch
-npm install -g gh-pages
-gh-pages -d _site
-```
-
-### Option 2: Use a separate deployment branch
-
-```bash
-# Build the site
-npm run build
-
-# Create/switch to deployment branch
-git checkout -b deploy
-git add _site/
-git commit -m "Deploy: $(date)"
-git subtree push --prefix _site origin deploy
-```
-
 ## Local Development
 
 1. **Install dependencies:**
@@ -118,6 +90,8 @@ git subtree push --prefix _site origin deploy
    - Or use a local server: `python3 -m http.server -d _site`
 
 ## Important Notes
+
+Always test locally before pushing to remote to trigger deployment.
 
 ### What Gets Deployed
 
