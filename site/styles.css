@@ -1,0 +1,129 @@
+/* Import Tufte CSS */
+@import url('styles/tufte.css');
+
+/* Additional styles for client-side rendered content */
+article {
+  padding: 5rem 0rem;
+}
+
+/* Post list styles */
+#post-list {
+  margin-top: 1.5rem;
+}
+
+.post-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.post-item:last-child {
+  border-bottom: none;
+}
+
+.post-item h3 {
+  margin: 0 0 0.5rem;
+}
+
+.post-item h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-item h3 a:hover {
+  text-decoration: underline;
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.5rem;
+}
+
+.post-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Post navigation */
+.post-nav {
+  margin: 3rem 0 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.post-nav a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.post-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Code blocks */
+article pre {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+article code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+}
+
+article p code {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* Math */
+.MathJax {
+  font-size: 1.1em;
+}
+
+/* YouTube Video Embeds */
+.youtube-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  margin: 1.5rem 0;
+}
+
+.youtube-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  article h1 {
+    font-size: 2rem;
+  }
+}
+

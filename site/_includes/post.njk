@@ -1,0 +1,15 @@
+---
+layout: base.njk
+---
+<article>
+  <h1>{{ title }}</h1>
+  {% if date %}
+  <p class="subtitle"><time datetime="{{ date | dateToRfc3339 }}">{{ date | readableDate }}</time></p>
+  {% endif %}
+  {{ content | safe }}
+  
+  <nav class="post-nav">
+    <a href="/">&larr; Back to homepage</a>
+  </nav>
+</article>
+
