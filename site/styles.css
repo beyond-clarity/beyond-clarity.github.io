@@ -120,6 +120,17 @@ article p code {
   border: 0;
 }
 
+/* Footer */
+footer {
+  max-width: 100%;
+  margin: 4rem auto 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   article h1 {
