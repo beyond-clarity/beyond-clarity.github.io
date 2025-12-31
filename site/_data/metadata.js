@@ -33,8 +33,9 @@ export default {
 		text3_url: "https://www.adamdjbrett.com/"
 	},
 	author: {
-		name: "Adam DJ Brett",
-		email: "info@adamdjbrett.com",
-		url: "https://adamdjbrett.com/"
+		name: "I. Memming Park",
+		email: "memming.park@research.fchampalimaud.org",
+		url: "https://www.memming.com/"
 	}
 }
+
